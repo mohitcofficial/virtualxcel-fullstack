@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #fcab14;
+  --black-color: #000;
+  --white-color: #fff;
+  --orange-color: #fcab14;
+  --light-white-color: rgb(255, 255, 255, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+  font-size: var(--font-size-base);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.glow1 {
+  text-shadow: -4px -10px 24px rgba(0, 128, 217, 0.7),
+    -4px -4px 24px rgba(0, 128, 217, 0.7), -4px 0px 24px rgba(0, 128, 217, 0.5),
+    -4px 4px 24px rgba(0, 128, 219, 0.5), -4px 12px 24px rgba(0, 128, 217, 0.5),
+    40px -2px 24px rgba(0, 128, 217, 0.5), 40px 0px 24px rgba(0, 128, 217, 0.5),
+    40px 4px 24px rgba(0, 128, 217, 0.7);
+}
+.glow2 {
+  text-shadow: 2px -10px 24px rgba(0, 128, 217, 0.5),
+    2px -2px 24px rgba(0, 128, 217, 0.5), 2px 0px 24px rgba(112, 98, 217, 0.5),
+    2px 4px 24px rgba(112, 98, 217, 0.5), 2px 12px 24px rgba(112, 98, 217, 0.5),
+    20px 0px 24px rgba(191, 69, 172, 0.5), 20px 4px 24px rgba(191, 69, 172, 0.5);
+}
+.glow3 {
+  text-shadow: 8px -10px 24px rgba(112, 98, 217, 0.5),
+    8px -2px 24px rgba(191, 69, 172, 0.7), 8px 0px 24px rgba(191, 69, 172, 0.7),
+    8px 4px 24px rgba(191, 69, 172, 0.7), 8px 12px 24px rgba(191, 69, 172, 0.7);
+}
+.glow4 {
+  text-shadow: 13px -10px 20px rgba(206, 56, 118, 0.5),
+    13px -2px 24px rgba(206, 56, 118, 0.5),
+    13px 0px 24px rgba(206, 56, 118, 0.7), 13px 4px 24px rgba(206, 56, 118, 0.7),
+    13px 12px 24px rgba(206, 56, 118, 0.5);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-base: 1.125rem; /* 18px */
+    --font-size-large: 1.75rem; /* 28px */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-base: 1.25rem; /* 20px */
+    --font-size-large: 2rem; /* 32px */
+  }
+}
+
+.gradientText {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.slick-list,
+.slick-track {
+  gap: 10px;
+}
+
+.slick-slide {
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.slick-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: yellow;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary-color) !important;
+  font-size: 24px !important;
+}
+
+@media (max-width: 800px) {
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+}
